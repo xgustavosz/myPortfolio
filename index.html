@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gustavo Silva</title>
+    
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700&family=Kalam:wght@300;400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="headerDiv">
+            <button class="headerButton" onclick="window.scrollTo(0, 0)">
+                <h1>Gustavo<span>Silva</span></h1>
+            </button>
+            <nav>
+                <ul class="navMenu">
+                    <li><a href="#home">Inicio</a></li>
+                    <li><a href="#about">Sobre mim</a></li>
+                    <li><a href="#projects">Projetos</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+                
+                <div class="mobile-menu-icon">
+                    <button onclick="menuShow()"><img src="images/menu.svg" alt="menu responsivo" class="icon"></button>
+                </div>
+            </nav>
+        </div>
+        <div class="mobileMenu">
+            <ul>
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#about">Sobre mim</a></li>
+                <li><a href="#projects">Projetos</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <section id="home">
+            <div class="mainContent">
+                <h1>Olá, eu sou o Gustavo</h1>
+                <h2>Desenvolvedor Front-End</h2>
+                <p class="detailsText">Olá! Sou um desenvolvedor web apaixonado por criar experiências incríveis na internet. Atualmente, estou empregado na <strong>Brainny Smart Solutions</strong>, onde tenho a oportunidade de aprimorar minhas habilidades em uma variedade de tecnologias, incluindo <strong>Javascript</strong>, <strong>React</strong>, <strong>Typescript</strong>, <strong>Next.js</strong> e <strong>GraphQl</strong>.</p>
+                <div class="mainButtons" >
+                    <button class="resumeButton styleButton"><img src="images/resume.svg" alt="ícone de caderno" /> Meu currículo</button>
+                    <button class="contactTouchButton styleButton" onclick="scrollToContact()">Entrar em contato <img src="images/rightArrow.svg" alt="seta para direita" /></button>
+                </div>
+            </div>
+            <img class="mainPhoto" src="images/computer.svg" alt="Imagem de um computador com duas mãos no teclado" />
+        </section>
+    </main>
+
+    <section id="about">
+        <div class="styleDiv aboutMeDiv">
+            <img class="aboutMePhoto" src="images/codingMan.svg" alt="Mulher mexendo no computador com um gato olhando" />
+            <div class="aboutMeText">
+                <div class="iconsLanguage">    
+                <i class="devicon-javascript-plain"></i>
+                <i class="devicon-react-original"></i>
+                <i class="devicon-typescript-plain"></i>
+                <i class="devicon-nextjs-original-wordmark"></i>
+                <i class="devicon-graphql-plain"></i>
+                </div>
+          
+                <h2 class="subtitle">Sobre mim</h2>
+                <p class="introductionText">Quem sou eu?</p>
+                <p class="detailsText">Além de me aventurar no mundo da programação, sou um apaixonado por café, um amante de gatos e cachorros e um viciado em música e séries. Atualmente, estou na equipe da Brainny Smart Solutions, mas estou sempre buscando projetos pessoais para aprimorar minhas habilidades. Vamos bater um papo?</p>
+                <button class="styleButton"><img src="images/resume.svg" alt="ícone de caderno" /> Meu currículo</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="projectsDiv">
+            <h2 class="subtitle">Projetos</h2>
+            <p class="introductionText">Dê uma olhada nos meus projetos em destaque</p>
+            <div class="projectsContainer">
+                <div class="projectStatus">
+                    <img src="images/projectImage.svg" alt="imagem do projeto" />
+                    <p class="dateProject">Em progresso</p>
+                    <h2 class="titleProject">Em breve!</h2>
+                    <p class="descriptionProject">Projeto sairá em breve.</p>
+                </div>
+                <div class="projectStatus">
+                    <img src="images/projectImage.svg" alt="imagem do projeto" />
+                    <p class="dateProject">Em progresso</p>
+                    <h2 class="titleProject">Em breve!</h2>
+                    <p class="descriptionProject">Projeto sairá em breve.</p>
+                </div>
+                <div class="projectStatus">
+                    <img src="images/projectImage.svg" alt="imagem do projeto" />
+                    <p class="dateProject">Em progresso</p>
+                    <h2 class="titleProject">Em breve!</h2>
+                    <p class="descriptionProject">Projeto sairá em breve.</p>
+                </div>
+                <div class="projectStatus toHidden hiddenProject">
+                    <img src="images/projectImage.svg" alt="imagem do projeto" />
+                    <p class="dateProject">Em progresso</p>
+                    <h2 class="titleProject">Em breve!</h2>
+                    <p class="descriptionProject">Projeto sairá em breve.</p>
+                </div>
+                <div class="projectStatus toHidden hiddenProject">
+                    <img src="images/projectImage.svg" alt="imagem do projeto" />
+                    <p class="dateProject">Em progresso</p>
+                    <h2 class="titleProject">Em breve!</h2>
+                    <p class="descriptionProject">Projeto sairá em breve.</p>
+                </div>
+                <div class="projectStatus toHidden hiddenProject">
+                    <img src="images/projectImage.svg" alt="imagem do projeto" />
+                    <p class="dateProject">Em progresso</p>
+                    <h2 class="titleProject">Em breve!</h2>
+                    <p class="descriptionProject">Projeto sairá em breve.</p>
+                </div>
+            </div>
+            <button onclick="openProject()" class="styleButton seeAllBtn">
+                <span>Ver mais</span>
+                <img src="images/rightArrow.svg" alt="seta para direita" />
+            </button>
+        </div>
+    </section>
+
+    <section id="contact" class="styleDiv">
+        <div class="contactDiv">
+            <img src="images/perfilIcon.svg" alt="foto de perfil" class="profilePhoto" />
+            <h2 class="subtitle">Contato</h2>
+            <p class="introductionText">Gostou do meu trabalho? Vamos trabalhar juntos</p>
+            <p class="detailsText detailsTextContact">Estou sempre pronto para bater um papo. Envie-me um e-mail para <span><a href="mailto:gugassilva2000@gmail.com">gugassilva2000@gmail.com</a></span> ou me chame nas redes sociais.</p>
+            <div class="socialMediaIconsDiv">
+                <a target="_blank" href="https://github.com/xgustavosz"><img src="images/github.svg" alt="ícone do github" /></a>
+                <a target="_blank" href="https://www.linkedin.com/in/xgustavosz/"><img src="images/linkedin.svg" alt="ícone do linkedin" /></a>
+                <a target="_blank" href="https://www.instagram.com/xgustavosz/"><img src="images/instagram.svg" alt="ícone do instagram" /></a>
+            </div>
+        </div>
+   
+        <form class="contactForm" action="https://formsubmit.co/ajax/43700d80696e1996d6e4b18652f015b5" method="POST" data-form>
+            <input required id="name" name="nome" type="text" placeholder="Nome" /> 
+            <input required id="email" name="email" type="email" placeholder="E-mail" />
+            <textarea required id="mensagem" name="mensagem" placeholder="Sua mensagem" rows="8"></textarea>
+            <button type="submit" class="styleButton" data-button>Enviar mensagem <img src="images/rightArrow.svg" alt="seta para direita" /></button>
+        </form>
+    </section>
+
+    <footer>
+        <p>Gustavo Silva, 2024. Layout baseado no template da <a target="_blank" href="https://www.rocketseat.com.br/">Rocketseat</a>.</p>
+        <div class="socialMediaLinks">
+            <a target="_blank" href="https://github.com/xgustavosz">GitHub</a>
+            <a target="_blank" href="https://www.linkedin.com/in/xgustavosz/">LinkedIn</a>
+            <a target="_blank" href="https://www.instagram.com/xgustavosz/">Instagram</a>
+            <button onclick="window.scrollTo(0, 0)"><img src="images/upArrow.svg" alt="seta para cima" /></button>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
